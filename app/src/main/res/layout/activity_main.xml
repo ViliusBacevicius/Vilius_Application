@@ -7,10 +7,22 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tvMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Viliaus programa!"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onbtnchangeClick"
+        android:text="Spausti cia"
+        app:layout_constraintBottom_toTopOf="@+id/tvMain"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
