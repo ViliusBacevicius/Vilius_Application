@@ -2,6 +2,7 @@ package com.example.vilius_application;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,10 +10,11 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button mButton;
+
 
 
     TextView tvMain;
+
 
 
     @Override
@@ -24,6 +26,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
+    public void onbutton2Click(View view) {
+        this.tvMain.setBackgroundColor(Color.parseColor("#CDEFFE"));
+    }
 
     public void onbtnchangeClick(View view) {
         this.tvMain.setText("Programos pabaiga");
